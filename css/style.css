@@ -8,7 +8,7 @@ CSS ELEMENTI GENERICI
     margin: 0;
 }
 .boxed{                                 /*classe per allineare bene */
-    max-width: 1380px;                   /*meglio dare in pixel per fissare bene la pagina o usare % per farla adattare al dispositivo */
+    max-width: 1410px;                   /*meglio dare in pixel per fissare bene la pagina o usare % per farla adattare al dispositivo */
     margin: 0 auto;
 }
 
@@ -53,6 +53,7 @@ CSS ELEMENTI GENERICI
 .col20 {width: 20%;}
 .col25 {width: 25%;}
 .col30 {width: 30%;}
+.col33 {width: 33%;}
 .col40 {width: 40%;}
 .col50 {width: 50%;}
 .col60 {width: 60%;}
@@ -64,8 +65,7 @@ CSS ELEMENTI GENERICI
 /* MISC */
 
 .MiniColumn {
-    padding-top: 40px;
-    width: calc((100% / 6) * 1);
+
 }
 
 
@@ -90,7 +90,7 @@ body{
     left: 0;
     right: 0;
     height: 70px;
-    max-width: 1380px;
+    max-width: 1400px;
     justify-content: space-between;
     font-size: 15px;
 }
@@ -114,4 +114,79 @@ header img{
 
 header i{
     margin-left: 10px;
+}
+
+.mainBox{
+    display: flex;
+    min-height: 1300px;
+    margin: 60px auto;
+    flex-wrap: wrap;
+}
+
+
+.img1{
+    width: 450px;
+    height: 650px;
+    margin: 10px;
+    background-image: url(../img/1.webp);
+    background-size: cover;
+}
+.img1:hover{
+    background-image: url(../img/1b.webp);
+}
+
+.img2{
+    width: 450px;
+    height: 650px;
+    margin: 10px;
+    background-image: url(../img/2.webp);
+    background-size: cover;
+}
+.img2:hover{
+    background-image: url(../img/2b.webp);
+}
+
+.img3{
+    width: 450px;
+    height: 650px;
+    margin: 10px;
+    background-image: url(../img/3.webp);
+    background-size: cover;
+    
+}
+.img3:hover{
+    background-image: url(../img/3b.webp);
+}
+
+.img4{
+    width: 450px;
+    height: 650px;
+    margin: 10px;
+    background-image: url(../img/4.webp);
+    background-size: cover;
+}
+.img4:hover{
+    background-image: url(../img/4b.webp);
+}
+
+.img5{
+    width: 450px;
+    height: 650px;
+    margin: 10px;
+    background-image: url(../img/5.webp);
+    background-size: cover;
+}
+.img5:hover{
+    background-image: url(../img/5b.webp);
+}
+
+.img6{
+    width: 450px;
+    height: 650px;
+    margin: 10px;
+    background-image: url(../img/6.webp);
+    background-size: cover;
+}
+.img6:hover{
+    background-image: url(../img/6b.webp);
 }
