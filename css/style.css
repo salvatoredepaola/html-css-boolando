@@ -1,0 +1,117 @@
+/********************
+CSS ELEMENTI GENERICI 
+*********************/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.boxed{                                 /*classe per allineare bene */
+    max-width: 1380px;                   /*meglio dare in pixel per fissare bene la pagina o usare % per farla adattare al dispositivo */
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/* SPAZI */
+
+.hMin520{ min-height: 520px;}
+.space {padding: 3em;}
+.col {padding: 10px;}
+.padding-top{padding-top: 180px;}
+.padding-bottom{padding-bottom: 180px;}
+
+/* ALLINEAMENTO */
+
+.text-left { text-align: left;}
+.text-center { text-align: center;}
+.text-right { text-align: right;}
+.alignItemCenter {align-items: center;}
+.alignItemTop {align-items: flex-start;}
+.space-between {justify-content: space-between;}
+.justify-center {justify-content: center;}
+
+/* COLORI SFONDO */
+
+.bg-tomato {background-color: tomato;}
+.bg-blue {background-color: blue;}
+
+
+/* COORE TESTO */
+
+.text-black{color: black;}
+.text-white{color: white;}
+.text-blue{color: #8ea1e1;}
+
+/* POSIZIONAMENTO */
+
+.col10 {width: 10%;}
+.col20 {width: 20%;}
+.col25 {width: 25%;}
+.col30 {width: 30%;}
+.col40 {width: 40%;}
+.col50 {width: 50%;}
+.col60 {width: 60%;}
+.col70 {width: 70%;}
+.col80 {width: 80%;}
+.width400 {width: 400px;}
+.width270 {width: 270px;}
+
+/* MISC */
+
+.MiniColumn {
+    padding-top: 40px;
+    width: calc((100% / 6) * 1);
+}
+
+
+/******************
+CSS ELEMENTI PAGINA
+*******************/
+body{   
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    max-width: 1380px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+header a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header img{
+    display: block;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+}
+
+header i{
+    margin-left: 10px;
+}
