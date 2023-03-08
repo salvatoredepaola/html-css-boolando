@@ -14,7 +14,6 @@ CSS ELEMENTI GENERICI
 
 .flex{
     display: flex;
-    flex-direction: row;
 }
 
 /* SPAZI */
@@ -32,8 +31,11 @@ CSS ELEMENTI GENERICI
 .text-right { text-align: right;}
 .alignItemCenter {align-items: center;}
 .alignItemTop {align-items: flex-start;}
+.alignItemEnd {align-items: flex-end;}
 .space-between {justify-content: space-between;}
 .justify-center {justify-content: center;}
+
+
 
 /* COLORI SFONDO */
 
@@ -43,6 +45,7 @@ CSS ELEMENTI GENERICI
 
 /* COORE TESTO */
 
+.text-tomato{color: tomato;}
 .text-black{color: black;}
 .text-white{color: white;}
 .text-blue{color: #8ea1e1;}
@@ -64,9 +67,6 @@ CSS ELEMENTI GENERICI
 
 /* MISC */
 
-.MiniColumn {
-
-}
 
 
 /******************
@@ -93,6 +93,14 @@ body{
     max-width: 1400px;
     justify-content: space-between;
     font-size: 15px;
+}
+
+.info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    padding-top: 0.5rem;
 }
 
 header a{
@@ -123,13 +131,48 @@ header i{
     flex-wrap: wrap;
 }
 
+.product{
+    min-height: 700px;
+    display: flex;
+    position: relative;
+}
+
+.price{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.discount{
+    text-decoration: line-through;
+}
+
+.heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    left: 400px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+}
+main i{
+    font-size: 20px;
+}
+main .heart:hover{
+    color: red;
+}
+
+
 
 .img1{
     width: 450px;
     height: 650px;
     margin: 10px;
     background-image: url(../img/1.webp);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .img1:hover{
     background-image: url(../img/1b.webp);
@@ -140,7 +183,8 @@ header i{
     height: 650px;
     margin: 10px;
     background-image: url(../img/2.webp);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .img2:hover{
     background-image: url(../img/2b.webp);
@@ -151,7 +195,8 @@ header i{
     height: 650px;
     margin: 10px;
     background-image: url(../img/3.webp);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     
 }
 .img3:hover{
@@ -163,7 +208,8 @@ header i{
     height: 650px;
     margin: 10px;
     background-image: url(../img/4.webp);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .img4:hover{
     background-image: url(../img/4b.webp);
@@ -174,7 +220,8 @@ header i{
     height: 650px;
     margin: 10px;
     background-image: url(../img/5.webp);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .img5:hover{
     background-image: url(../img/5b.webp);
@@ -185,8 +232,18 @@ header i{
     height: 650px;
     margin: 10px;
     background-image: url(../img/6.webp);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .img6:hover{
     background-image: url(../img/6b.webp);
 }
+
+/* .info{
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+#fine{
+    align-content: flex-end;
+} */
