@@ -20,7 +20,7 @@ CSS ELEMENTI GENERICI
 
 .hMin520{ min-height: 520px;}
 .space {padding: 3em;}
-.col {padding: 10px;}
+.col {padding: 30px;}
 .padding-top{padding-top: 180px;}
 .padding-bottom{padding-bottom: 180px;}
 
@@ -41,6 +41,7 @@ CSS ELEMENTI GENERICI
 
 .bg-tomato {background-color: tomato;}
 .bg-blue {background-color: blue;}
+.bg-black {background-color: #222;}
 
 
 /* COORE TESTO */
@@ -96,6 +97,7 @@ body{
 }
 
 .info{
+    font-size: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -107,6 +109,9 @@ header a{
     margin-right: 10px;
     text-decoration: none;
     color: white;
+}
+i{
+    font-size: 15px;
 }
 
 a:hover{
@@ -142,8 +147,45 @@ header i{
     margin-right: 10px;
 }
 
-.discount{
+.sconto{
     text-decoration: line-through;
+}
+
+.discount{
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    position: absolute;
+    left: 0;
+    top: 580px;
+    height: 25px;
+    width: 55px;
+}
+.sostenibilità{
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    position: absolute;
+    left: 60px;
+    top: 580px;
+    height: 25px;
+    width: 105px;
+}
+h4{
+    font-size: 14px;
+}
+a{
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 .heart{
@@ -164,7 +206,7 @@ main .heart:hover{
     color: red;
 }
 
-
+/* IMMAGINI */
 
 .img1{
     width: 450px;
