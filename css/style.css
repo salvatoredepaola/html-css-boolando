@@ -39,14 +39,14 @@ CSS ELEMENTI GENERICI
 
 /* COLORI SFONDO */
 
-.bg-tomato {background-color: tomato;}
+.bg-orangered {background-color: orangered;}
 .bg-blue {background-color: blue;}
 .bg-black {background-color: #222;}
 
 
 /* COORE TESTO */
 
-.text-tomato{color: tomato;}
+.text-orangetext{color: orangered;}
 .text-black{color: black;}
 .text-white{color: white;}
 .text-blue{color: #8ea1e1;}
@@ -79,7 +79,9 @@ body{
 }
 
 .header{
-    position: relative;
+     position: fixed;    /*con fixed l'elemento non si sposterà mai */
+    /* position: relative; */
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100%;
@@ -107,7 +109,6 @@ body{
 
 header a{
     margin-right: 10px;
-    text-decoration: none;
     color: white;
 }
 i{
@@ -133,7 +134,7 @@ header i{
 .mainBox{
     display: flex;
     min-height: 1300px;
-    margin: 60px auto;
+    margin: 120px auto 60px;
     flex-wrap: wrap;
 }
 
@@ -159,7 +160,7 @@ header i{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: tomato;
+    background-color: orangered;
     position: absolute;
     left: 0;
     top: 580px;
@@ -195,6 +196,7 @@ a{
     justify-content: center;
     background-color: white;
     position: absolute;
+    padding-left: 10px;
     left: 400px;
     top: 10px;
     height: 50px;
